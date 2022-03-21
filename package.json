@@ -24,6 +24,7 @@
   "dependencies": {
     "argparse": "^2.0.1",
     "async-iterator-all": "^1.0.0",
+    "axios": "^0.26.1",
     "cli-progress": "3.8.2",
     "decentraland-crypto": "0.0.2",
     "eth-crypto": "^1.8.0",
