@@ -19,22 +19,15 @@ export type SourceJson = {
 
 export type Wearable = {
   id: WearableId
-  type: 'wearable'
-  thumbnail: string
   image: string | undefined
-  category: string
-  baseUrl: string
-  replaces: string[]
-  hides: string[]
-  i18n: {
-    code: string
-    text: string
-  }[]
-  tags: string[]
-  representations: BodyShapeRespresentation[]
-  rarity: string
-  description: string
+  description: string | undefined
+  data: Data
 }
+
+export type Data = {
+  representations: BodyShapeRespresentation[]
+}
+
 export type WearableId = string
 
 export type BodyShapeRespresentation = {
@@ -46,6 +39,6 @@ export type BodyShapeRespresentation = {
 }
 
 export type Content = {
-  file: string
+  path: string
   hash: string
 }

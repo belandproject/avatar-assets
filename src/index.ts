@@ -13,6 +13,7 @@ import { promisify } from 'util'
 import FormData from 'form-data'
 import axios from 'axios'
 import { readAssetJson } from './assets/readAssetJson'
+import { SourceJson, Wearable } from 'types'
 
 const DIST_ABS_PATH = resolve(join(__dirname, '..', 'dist'))
 const readDir = promisify(readdirOrig)
@@ -44,17 +45,16 @@ export async function runMain() {
     })
 
     console.log(`Found ${categoryFolders.length} categories with ${assetFolders.length} assets in total...`)
-    let wearables = []
-
+    let wearables : Wearable[] = []
     for (let assetFolder of assetFolders) {
       const contents = await uploadAsset(assetFolder)
       let wearable: any = {}
-      const assetJSON: any = await readAssetJson(assetFolder)
+      const assetJSON = await readAssetJson(assetFolder)
       wearable.id = `urn:beland:off-chain:${collectioName}:${assetJSON.name}`
       wearable.name = assetJSON.name
       wearable.image = contents.find((content) => content.path == 'thumbnail.png').hash
       wearable.description = assetJSON.description || ''
-      const imageName = `${assetJSON.id}.png`
+      const imageName = `${assetJSON.name}.png`
       const nameBlacklist = ['asset.json', 'thumbnail.png', imageName]
       wearable.data = {
         representations: assetJSON.main.map((main) => {
