@@ -13,17 +13,23 @@ import { promisify } from 'util'
 import FormData from 'form-data'
 import axios from 'axios'
 import { readAssetJson } from './assets/readAssetJson'
-import { SourceJson, Wearable } from 'types'
+import { Wearable } from 'types'
+import { Wallet } from 'ethers'
 
 const DIST_ABS_PATH = resolve(join(__dirname, '..', 'dist'))
 const readDir = promisify(readdirOrig)
 const readFile = promisify(readFileOrig)
+const API = process.env.API || 'https://nft-api-test.beland.io/v1'
+const PRIVATE_KEY = process.env.PRIVATE_KEY
+var accessToken
 
 if (!module.parent) {
   runMain().catch((error) => console.log(error, error.stack))
 }
 
 export async function runMain() {
+  await login()
+
   const getDirectories = (source: PathLike) =>
     readdirSync(source, { withFileTypes: true })
       .filter((dirent) => dirent.isDirectory())
@@ -45,7 +51,7 @@ export async function runMain() {
     })
 
     console.log(`Found ${categoryFolders.length} categories with ${assetFolders.length} assets in total...`)
-    let wearables : Wearable[] = []
+    let wearables: Wearable[] = []
     for (let assetFolder of assetFolders) {
       const contents = await uploadAsset(assetFolder)
       let wearable: any = {}
@@ -61,7 +67,7 @@ export async function runMain() {
           const mainFile = contents.find((content) => content.path == main.model)
           return {
             bodyShapes: [main.type],
-            mainFile: mainFile ? mainFile.hash: main.model,
+            mainFile: mainFile ? mainFile.hash : main.model,
             overrideReplaces: main.overrideReplaces,
             overrideHides: main.overrideHides,
             contents: contents.filter((content) => !nameBlacklist.includes(content.path)),
@@ -119,10 +125,10 @@ async function uploadAsset(assetFolder) {
         const form = new FormData()
         form.append('file', content, file)
         return axios
-          .post(`${process.env.API}/upload`, form, {
+          .post(`${API}/upload`, form, {
             headers: {
               ...form.getHeaders(),
-              // Authorization: 'Bearer ' + process.env.ACCESS_TOKEN,
+              Authorization: 'Bearer ' + accessToken,
             },
           })
           .then((res) => res.data[0])
@@ -132,4 +138,28 @@ async function uploadAsset(assetFolder) {
 
 function addFolderEntriesToArray(array: string[], rootFolder: string) {
   return readdirSync(rootFolder).map((entry) => array.push(join(rootFolder, entry)))
+}
+
+async function login() {
+  const walletPrivateKey = new Wallet(PRIVATE_KEY)
+  const timestamp = Date.now() / 1000
+  const msg = ['Beland:login', 'Hi', String(timestamp)]
+  const sign: string = await walletPrivateKey.signMessage(msg.join(':'))
+
+  const token = await axios
+    .post(`${API}/users/login`, {
+      timestamp,
+      sign,
+      name: 'Hi',
+      id: walletPrivateKey.address,
+    })
+    .then((res) => res.data)
+
+  const users = await axios.get(`${API}/users?id=${token.user}`).then((res) => res.data)
+  if (users.length == 0) {
+    await axios.post(`${API}/users/me`, {
+      name: 'Hi',
+    })
+  }
+  accessToken = token.access_token
 }
