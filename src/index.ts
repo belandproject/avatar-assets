@@ -64,10 +64,9 @@ export async function runMain() {
       const nameBlacklist = ['asset.json', 'thumbnail.png', imageName]
       wearable.data = {
         representations: assetJSON.main.map((main) => {
-          const mainFile = contents.find((content) => content.path == main.model)
           return {
             bodyShapes: [main.type],
-            mainFile: mainFile ? mainFile.hash : main.model,
+            mainFile: main.model,
             overrideReplaces: main.overrideReplaces,
             overrideHides: main.overrideHides,
             contents: contents.filter((content) => !nameBlacklist.includes(content.path)),
