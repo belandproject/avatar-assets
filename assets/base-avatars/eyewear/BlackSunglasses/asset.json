@@ -1,0 +1,19 @@
+{
+  "name": "black_sun_glasses",
+  "i18n": {
+    "en": "Black Sunglasses",
+    "es": "Anteojos Negros"
+  },
+  "tags": [
+    "accesories",
+    "woman",
+    "women",
+    "male",
+    "man"
+   ],
+  "category": "eye_wear",
+  "main": [
+    {"type": "urn:beland:off-chain:base-avatars:BaseMale", "model": "F_Eyewear_BlackSunglasses.glb"},
+    {"type": "urn:beland:off-chain:base-avatars:BaseFemale", "model": "F_Eyewear_BlackSunglasses.glb"}
+  ]
+}

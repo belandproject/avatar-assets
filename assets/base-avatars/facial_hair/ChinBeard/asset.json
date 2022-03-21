@@ -1,0 +1,16 @@
+{
+  "name": "chin_beard",
+  "i18n": {
+    "en": "Soul Patch",
+    "es": "Chiva"
+  },
+  "tags": [
+    "face",
+    "facial_hair"
+   ],
+  "category": "facial_hair",
+  "main": [
+    {"type": "urn:beland:off-chain:base-avatars:BaseMale", "model": "M_FacialHair_ChinBeard.glb"},
+    {"type": "urn:beland:off-chain:base-avatars:BaseFemale", "model": "F_FacialHair_ChinBeard.glb"}
+  ]
+}

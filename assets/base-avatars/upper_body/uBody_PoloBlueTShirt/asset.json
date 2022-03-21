@@ -1,0 +1,16 @@
+{
+  "name": "polobluetshirt",
+  "i18n": {
+    "en": "Blue Polo T Shirt",
+    "es": "Remera de Polo Azul"
+  },
+  "tags": [
+    "upper",
+    "body"
+   ],
+  "category": "upper_body",
+  "main": [
+    {"type": "urn:beland:off-chain:base-avatars:BaseFemale", "model": "F_uBody_PoloBlueTShirt.glb"},
+    {"type": "urn:beland:off-chain:base-avatars:BaseMale", "model": "M_uBody_PoloBlueTShirt.glb"}
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "eyes_09",
+  "i18n": {
+    "en": "Eyes_09",
+    "es": "Eyes_09"
+  },
+  "tags": [
+    "face",
+    "eyes"
+   ],
+  "category": "eyes",
+  "main": [
+    {"type": "urn:beland:off-chain:base-avatars:BaseMale", "model": "M_Eyes_09.png"},
+    {"type": "urn:beland:off-chain:base-avatars:BaseFemale", "model": "M_Eyes_09.png"}
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "eyebrows_16",
+  "i18n": {
+    "en": "Eyebrows_16",
+    "es": "Eyebrows_16"
+  },
+  "tags": [
+    "face",
+    "eyebrows"
+   ],
+  "category": "eyebrows",
+  "main": [
+    {"type": "urn:beland:off-chain:base-avatars:BaseFemale", "model": "Eyebrows_16"},
+    {"type": "urn:beland:off-chain:base-avatars:BaseMale", "model": "Eyebrows_16"}
+  ]
+}

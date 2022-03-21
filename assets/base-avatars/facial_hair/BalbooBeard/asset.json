@@ -1,0 +1,16 @@
+{
+  "name": "balbo_beard",
+  "i18n": {
+    "en": "Balbo",
+    "es": "Balbo"
+  },
+  "tags": [
+    "face",
+    "facial_hair"
+   ],
+  "category": "facial_hair",
+  "main": [
+    {"type": "urn:beland:off-chain:base-avatars:BaseMale", "model": "M_FacialHair_BalboBeard.glb"},
+    {"type": "urn:beland:off-chain:base-avatars:BaseFemale", "model": "F_FacialHair_BalboBeard.glb"}
+  ]
+}

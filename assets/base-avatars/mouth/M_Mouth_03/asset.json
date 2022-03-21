@@ -1,0 +1,16 @@
+{
+  "name": "mouth_03",
+  "i18n": {
+    "en": "Mouth_03",
+    "es": "Mouth_03"
+  },
+  "tags": [
+    "face",
+    "mouth"
+   ],
+  "category": "mouth",
+  "main": [
+    {"type": "urn:beland:off-chain:base-avatars:BaseMale", "model": "M_Mouth_03.png"},
+    {"type": "urn:beland:off-chain:base-avatars:BaseFemale", "model": "M_Mouth_03.png"}
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "goatee_beard",
+  "i18n": {
+    "en": "Goatee",
+    "es": "Goatee"
+  },
+  "tags": [
+    "face",
+    "facial_hair"
+   ],
+  "category": "facial_hair",
+  "main": [
+    {"type": "urn:beland:off-chain:base-avatars:BaseMale", "model": "M_FacialHair_Goatee.glb"},
+    {"type": "urn:beland:off-chain:base-avatars:BaseFemale", "model": "F_FacialHair_Goatee.glb"}
+  ]
+}

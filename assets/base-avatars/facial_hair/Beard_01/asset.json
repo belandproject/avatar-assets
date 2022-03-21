@@ -1,0 +1,17 @@
+{
+  "name": "beard",
+  "i18n": {
+    "en": "Beard",
+    "es": "Barba"
+  },
+  "tags": [
+    "face",
+    "facial_hair"
+   ],
+  "category": "facial_hair",
+  "main": [
+    {"type": "urn:beland:off-chain:base-avatars:BaseMale", "model": "M_Beard.glb"},
+    {"type": "urn:beland:off-chain:base-avatars:BaseFemale", "model": "F_Beard.glb"}
+
+  ]
+}

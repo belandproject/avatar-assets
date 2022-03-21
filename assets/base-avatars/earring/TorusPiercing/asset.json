@@ -1,0 +1,19 @@
+{
+  "name": "toruspiercing",
+  "i18n": {
+    "en": "Torus Piercing",
+    "es": "Torus Piercing"
+  },
+  "tags": [
+    "accesories",
+    "male",
+    "man",
+    "female",
+    "woman"
+   ],
+  "category": "earring",
+  "main": [
+    {"type": "urn:beland:off-chain:base-avatars:BaseMale", "model": "TorusPiercing.glb"},
+    {"type": "urn:beland:off-chain:base-avatars:BaseFemale", "model": "TorusPiercing.glb"}
+  ]
+}

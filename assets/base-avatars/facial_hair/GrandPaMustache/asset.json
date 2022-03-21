@@ -1,0 +1,17 @@
+{
+  "name": "granpa_beard",
+  "i18n": {
+    "en": "Walrus",
+    "es": "Walrus"
+  },
+  "tags": [
+    "face",
+    "facial_hair"
+   ],
+  "category": "facial_hair",
+  "main": [
+    {"type": "urn:beland:off-chain:base-avatars:BaseMale", "model": "M_FacialHair_GrandPaMoustache.glb"},
+    {"type": "urn:beland:off-chain:base-avatars:BaseFemale", "model": "F_FacialHair_GrandPaMoustache.glb"}
+    
+  ]
+}
