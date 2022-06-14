@@ -15,13 +15,14 @@ import axios from 'axios'
 import { readAssetJson } from './assets/readAssetJson'
 import { Wearable } from 'types'
 import { Wallet } from 'ethers'
+import { Authenticator, AuthIdentity } from 'beland-crypto'
 
 const DIST_ABS_PATH = resolve(join(__dirname, '..', 'dist'))
 const readDir = promisify(readdirOrig)
 const readFile = promisify(readFileOrig)
 const API = process.env.API || 'https://nft-api-test.beland.io/v1'
 const PRIVATE_KEY = process.env.PRIVATE_KEY
-var accessToken
+var identity: AuthIdentity;
 
 if (!module.parent) {
   runMain().catch((error) => console.log(error, error.stack))
@@ -115,6 +116,7 @@ function addTraits(wearable, assetJSON, name) {
 async function uploadAsset(assetFolder) {
   const allFiles = await readDir(assetFolder)
   const fileBlacklist = ['asset.json']
+  const authLinks = Authenticator.signPayload(identity, 'post:/upload')
   return Promise.all(
     allFiles
       .filter((file) => !fileBlacklist.includes(file))
@@ -127,7 +129,7 @@ async function uploadAsset(assetFolder) {
           .post(`${API}/upload`, form, {
             headers: {
               ...form.getHeaders(),
-              Authorization: 'Bearer ' + accessToken,
+              Authorization: 'Bearer ' + btoa(JSON.stringify(authLinks))
             },
           })
           .then((res) => res.data[0])
@@ -140,25 +142,31 @@ function addFolderEntriesToArray(array: string[], rootFolder: string) {
 }
 
 async function login() {
-  const walletPrivateKey = new Wallet(PRIVATE_KEY)
-  const timestamp = Date.now() / 1000
-  const msg = ['Beland:login', 'Hi', String(timestamp)]
-  const sign: string = await walletPrivateKey.signMessage(msg.join(':'))
+  identity = await createIdentity(300)
+}
 
-  const token = await axios
-    .post(`${API}/users/login`, {
-      timestamp,
-      sign,
-      name: 'Hi',
-      id: walletPrivateKey.address,
-    })
-    .then((res) => res.data)
 
-  const users = await axios.get(`${API}/users?id=${token.user}`).then((res) => res.data)
-  if (users.length == 0) {
-    await axios.post(`${API}/users/me`, {
-      name: 'Hi',
-    })
+/**
+ *
+ * @params provider - any ethereum provider (e.g: window.ethereum)
+ * @params expiration - ttl in seconds of the identity
+ */
+ export async function createIdentity(expiration: number): Promise<AuthIdentity> {
+  const wallet = new Wallet(PRIVATE_KEY)
+
+  const payload = {
+    address: wallet.address,
+    publicKey: wallet.publicKey,
+    privateKey: PRIVATE_KEY,
   }
-  accessToken = token.access_token
+
+  const identity = await Authenticator.initializeAuthChain(
+    wallet.address,
+    payload,
+    expiration,
+    (message) =>
+      wallet.signMessage(message)
+  )
+
+  return identity
 }
