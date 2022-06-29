@@ -1,0 +1,19 @@
+{
+    "name": "RedTshirt",
+    "i18n": {
+        "en": "Red Tshirt",
+        "es": "Red Tshirt"
+    },
+    "tags": [
+        "top",
+        "female",
+        "woman"
+    ],
+    "category": "upper_body",
+    "main": [
+        {
+            "type": "urn:beland:off-chain:base-avatars:BaseFemale",
+            "model": "F_uBody_RedTshirt.glb"
+        }
+    ]
+}

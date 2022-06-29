@@ -1,0 +1,19 @@
+{
+    "name": "RedWhileTshirt",
+    "i18n": {
+        "en": "Red While Tshirt",
+        "es": "Red While Tshirt"
+    },
+    "tags": [
+        "top",
+        "male",
+        "man"
+    ],
+    "category": "upper_body",
+    "main": [
+        {
+            "type": "urn:beland:off-chain:base-avatars:BaseMale",
+            "model": "M_uBody_RedWhileTshirt.glb"
+        }
+    ]
+}

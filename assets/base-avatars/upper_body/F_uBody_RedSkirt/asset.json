@@ -1,0 +1,19 @@
+{
+    "name": "RedSkirt",
+    "i18n": {
+        "en": "Red Skirt",
+        "es": "Red Skirt"
+    },
+    "tags": [
+        "top",
+        "female",
+        "woman"
+    ],
+    "category": "upper_body",
+    "main": [
+        {
+            "type": "urn:beland:off-chain:base-avatars:BaseFemale",
+            "model": "F_uBody_RedSkirt.glb"
+        }
+    ]
+}

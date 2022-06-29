@@ -1,0 +1,19 @@
+{
+    "name": "PinkTshirt05",
+    "i18n": {
+        "en": "Pink Tshirt 05",
+        "es": "Pink Tshirt 05"
+    },
+    "tags": [
+        "top",
+        "female",
+        "woman"
+    ],
+    "category": "upper_body",
+    "main": [
+        {
+            "type": "urn:beland:off-chain:base-avatars:BaseFemale",
+            "model": "F_uBody_PinkTshirt05.glb"
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "name": "RedStripedTshir",
+    "i18n": {
+        "en": "Red Striped Tshirt",
+        "es": "Red Striped Tshirt"
+    },
+    "tags": [
+        "top",
+        "male",
+        "man"
+    ],
+    "category": "upper_body",
+    "main": [
+        {
+            "type": "urn:beland:off-chain:base-avatars:BaseMale",
+            "model": "M_uBody_RedStripedTshirt.glb"
+        }
+    ]
+}

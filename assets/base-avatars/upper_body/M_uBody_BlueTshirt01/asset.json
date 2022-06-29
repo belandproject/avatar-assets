@@ -1,0 +1,19 @@
+{
+    "name": "BlueTshirt01",
+    "i18n": {
+        "en": "Blue Tshirt 01",
+        "es": "Blue Tshirt 01"
+    },
+    "tags": [
+        "top",
+        "male",
+        "man"
+    ],
+    "category": "upper_body",
+    "main": [
+        {
+            "type": "urn:beland:off-chain:base-avatars:BaseMale",
+            "model": "M_uBody_BlueTshirt01.glb"
+        }
+    ]
+}

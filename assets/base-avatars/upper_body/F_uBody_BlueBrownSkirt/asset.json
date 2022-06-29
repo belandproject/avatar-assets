@@ -1,0 +1,19 @@
+{
+    "name": "BlueBrownSkirt",
+    "i18n": {
+        "en": "Blue Brown Skirt",
+        "es": "Blue Brown Skirt"
+    },
+    "tags": [
+        "top",
+        "female",
+        "woman"
+    ],
+    "category": "upper_body",
+    "main": [
+        {
+            "type": "urn:beland:off-chain:base-avatars:BaseFemale",
+            "model": "F_uBody_BlueBrownSkirt.glb"
+        }
+    ]
+}

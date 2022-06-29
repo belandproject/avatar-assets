@@ -1,0 +1,19 @@
+{
+    "name": "GreenTshirt",
+    "i18n": {
+        "en": "Green Tshirt",
+        "es": "Green Tshirt"
+    },
+    "tags": [
+        "top",
+        "male",
+        "man"
+    ],
+    "category": "upper_body",
+    "main": [
+        {
+            "type": "urn:beland:off-chain:base-avatars:BaseMale",
+            "model": "M_uBody_GreenTshirt.glb"
+        }
+    ]
+}
