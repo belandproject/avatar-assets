@@ -1,0 +1,19 @@
+{
+    "name": "BlueShort",
+    "i18n": {
+        "en": "Blue Short",
+        "es": "Blue Short"
+    },
+    "tags": [
+        "bottom",
+        "male",
+        "man"
+    ],
+    "category": "lower_body",
+    "main": [
+        {
+            "type": "urn:beland:off-chain:base-avatars:BaseMale",
+            "model": "M_lBody_BlueShort.glb"
+        }
+    ]
+}

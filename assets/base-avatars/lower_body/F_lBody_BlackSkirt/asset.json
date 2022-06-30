@@ -1,0 +1,19 @@
+{
+    "name": "BlackSkirt",
+    "i18n": {
+        "en": "Black Skirt",
+        "es": "Black Skirt"
+    },
+    "tags": [
+        "bottom",
+        "female",
+        "woman"
+    ],
+    "category": "lower_body",
+    "main": [
+        {
+            "type": "urn:beland:off-chain:base-avatars:BaseFemale",
+            "model": "F_lBody_BlackSkirt.glb"
+        }
+    ]
+}

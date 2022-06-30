@@ -1,0 +1,19 @@
+{
+    "name": "BlackPants",
+    "i18n": {
+        "en": "Black Pants",
+        "es": "Black Pants"
+    },
+    "tags": [
+        "bottom",
+        "male",
+        "man"
+    ],
+    "category": "lower_body",
+    "main": [
+        {
+            "type": "urn:beland:off-chain:base-avatars:BaseMale",
+            "model": "M_lBody_BlackPants.glb"
+        }
+    ]
+}

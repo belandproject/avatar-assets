@@ -1,0 +1,19 @@
+{
+    "name": "PurpleSkirt",
+    "i18n": {
+        "en": "Purple Skirt",
+        "es": "Purple Skirt"
+    },
+    "tags": [
+        "bottom",
+        "female",
+        "woman"
+    ],
+    "category": "lower_body",
+    "main": [
+        {
+            "type": "urn:beland:off-chain:base-avatars:BaseFemale",
+            "model": "F_lBody_PurpleSkirt.glb"
+        }
+    ]
+}

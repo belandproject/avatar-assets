@@ -1,0 +1,19 @@
+{
+    "name": "GreyPants",
+    "i18n": {
+        "en": "Grey Pants",
+        "es": "Grey Pants"
+    },
+    "tags": [
+        "bottom",
+        "female",
+        "woman"
+    ],
+    "category": "lower_body",
+    "main": [
+        {
+            "type": "urn:beland:off-chain:base-avatars:BaseFemale",
+            "model": "F_lBody_GreyPants.glb"
+        }
+    ]
+}

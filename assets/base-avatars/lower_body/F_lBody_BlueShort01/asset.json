@@ -1,0 +1,19 @@
+{
+    "name": "BlueShort01",
+    "i18n": {
+        "en": "Blue Short 01",
+        "es": "Blue Short 01"
+    },
+    "tags": [
+        "bottom",
+        "female",
+        "woman"
+    ],
+    "category": "lower_body",
+    "main": [
+        {
+            "type": "urn:beland:off-chain:base-avatars:BaseFemale",
+            "model": "F_lBody_BlueShort01.glb"
+        }
+    ]
+}

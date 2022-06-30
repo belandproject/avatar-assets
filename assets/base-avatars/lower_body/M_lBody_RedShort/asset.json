@@ -1,0 +1,20 @@
+{
+    "name": "RedShort",
+    "i18n": {
+        "en": "RedShort",
+        "es": "RedShort"
+    },
+    "tags": [
+        "bottom",
+        "male",
+        "man"
+    ],
+    "category": "lower_body",
+    "main": [
+        {
+            "type": "urn:beland:off-chain:base-avatars:BaseMale",
+            "model": "M_lBody_RedShort.glb"
+        }
+    ]
+}
+

@@ -1,0 +1,19 @@
+{
+    "name": "JeanPants",
+    "i18n": {
+        "en": "Jean Pants",
+        "es": "Jean Pants"
+    },
+    "tags": [
+        "bottom",
+        "male",
+        "man"
+    ],
+    "category": "lower_body",
+    "main": [
+        {
+            "type": "urn:beland:off-chain:base-avatars:BaseMale",
+            "model": "M_lBody_JeanPants.glb"
+        }
+    ]
+}

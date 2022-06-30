@@ -1,0 +1,19 @@
+{
+    "name": "BluePants",
+    "i18n": {
+        "en": "Blue Pants",
+        "es": "Blue Pants"
+    },
+    "tags": [
+        "bottom",
+        "female",
+        "woman"
+    ],
+    "category": "lower_body",
+    "main": [
+        {
+            "type": "urn:beland:off-chain:base-avatars:BaseFemale",
+            "model": "F_lBody_BluePants.glb"
+        }
+    ]
+}

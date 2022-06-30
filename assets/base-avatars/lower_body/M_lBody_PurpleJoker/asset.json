@@ -1,0 +1,20 @@
+{
+    "name": "PurpleJoker",
+    "i18n": {
+        "en": "PurpleJoker",
+        "es": "PurpleJoker"
+    },
+    "tags": [
+        "bottom",
+        "male",
+        "man"
+    ],
+    "category": "lower_body",
+    "main": [
+        {
+            "type": "urn:beland:off-chain:base-avatars:BaseMale",
+            "model": "M_lBody_PurpleJoker.glb"
+        }
+    ]
+}
+
