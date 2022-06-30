@@ -1,0 +1,19 @@
+{
+    "name": "BlackSandals04",
+    "i18n": {
+        "en": "Black Sandals 04",
+        "es": "Black Sandals 04"
+    },
+    "tags": [
+        "shoes",
+        "woman",
+        "women"
+    ],
+    "category": "feet",
+    "main": [
+        {
+            "type": "urn:beland:off-chain:base-avatars:BaseFemale",
+            "model": "F_Feet_BlackSandals04.glb"
+        }
+    ]
+}

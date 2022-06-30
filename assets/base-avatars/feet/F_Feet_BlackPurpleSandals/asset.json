@@ -1,0 +1,19 @@
+{
+    "name": "BlackPurpleSandals",
+    "i18n": {
+        "en": "Black Purple Sandals",
+        "es": "Black Purple Sandals"
+    },
+    "tags": [
+        "shoes",
+        "woman",
+        "women"
+    ],
+    "category": "upper_body",
+    "main": [
+        {
+            "type": "urn:beland:off-chain:base-avatars:BaseFemale",
+            "model": "F_Feet_BlackPurpleSandals.glb"
+        }
+    ]
+}

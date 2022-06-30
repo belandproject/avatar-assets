@@ -1,0 +1,25 @@
+{
+    "name": "GreenSandals",
+    "i18n": {
+        "en": "Green Sandals",
+        "es": "Green Sandals"
+    },
+    "tags": [
+        "shoes",
+        "male",
+        "man",
+        "female",
+        "woman"
+    ],
+    "category": "feet",
+    "main": [
+        {
+            "type": "urn:beland:off-chain:base-avatars:BaseFemale",
+            "model": "Feet_GreenSandals.glb"
+        },
+        {
+            "type": "urn:beland:off-chain:base-avatars:BaseMale",
+            "model": "Feet_GreenSandals.glb"
+        }
+    ]
+}

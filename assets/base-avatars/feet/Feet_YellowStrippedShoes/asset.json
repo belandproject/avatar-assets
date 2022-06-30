@@ -1,0 +1,25 @@
+{
+    "name": "YellowStrippedShoes",
+    "i18n": {
+        "en": "Yellow Stripped Shoes",
+        "es": "Yellow Stripped Shoes"
+    },
+    "tags": [
+        "shoes",
+        "male",
+        "man",
+        "female",
+        "woman"
+    ],
+    "category": "feet",
+    "main": [
+        {
+            "type": "urn:beland:off-chain:base-avatars:BaseFemale",
+            "model": "Feet_YellowStrippedShoes.glb"
+        },
+        {
+            "type": "urn:beland:off-chain:base-avatars:BaseMale",
+            "model": "Feet_YellowStrippedShoes.glb"
+        }
+    ]
+}

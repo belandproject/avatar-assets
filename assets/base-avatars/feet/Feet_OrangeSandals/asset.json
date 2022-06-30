@@ -1,0 +1,25 @@
+{
+    "name": "OrangeSandals",
+    "i18n": {
+        "en": "Orange Sandals",
+        "es": "Orange Sandals"
+    },
+    "tags": [
+        "shoes",
+        "male",
+        "man",
+        "female",
+        "woman"
+    ],
+    "category": "feet",
+    "main": [
+        {
+            "type": "urn:beland:off-chain:base-avatars:BaseFemale",
+            "model": "Feet_OrangeSandals.glb"
+        },
+        {
+            "type": "urn:beland:off-chain:base-avatars:BaseMale",
+            "model": "Feet_OrangeSandals.glb"
+        }
+    ]
+}

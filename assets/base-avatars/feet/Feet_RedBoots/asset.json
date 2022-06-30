@@ -1,0 +1,25 @@
+{
+    "name": "RedBoots",
+    "i18n": {
+        "en": "Red Boots",
+        "es": "Red Boots"
+    },
+    "tags": [
+        "shoes",
+        "male",
+        "man",
+        "female",
+        "woman"
+    ],
+    "category": "feet",
+    "main": [
+        {
+            "type": "urn:beland:off-chain:base-avatars:BaseFemale",
+            "model": "Feet_RedBoots.glb"
+        },
+        {
+            "type": "urn:beland:off-chain:base-avatars:BaseMale",
+            "model": "Feet_RedBoots.glb"
+        }
+    ]
+}

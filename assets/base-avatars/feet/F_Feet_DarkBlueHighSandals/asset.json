@@ -1,0 +1,19 @@
+{
+    "name": "DarkBlueHighSandals",
+    "i18n": {
+        "en": "Dark Blue High Sandals",
+        "es": "Dark Blue High Sandals"
+    },
+    "tags": [
+        "shoes",
+        "woman",
+        "women"
+    ],
+    "category": "feet",
+    "main": [
+        {
+            "type": "urn:beland:off-chain:base-avatars:BaseFemale",
+            "model": "F_Feet_DarkBlueHighSandals.glb"
+        }
+    ]
+}

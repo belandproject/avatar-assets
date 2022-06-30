@@ -1,0 +1,25 @@
+{
+    "name": "WhileSlothShoes",
+    "i18n": {
+        "en": "While Sloth Shoes",
+        "es": "While Sloth Shoes"
+    },
+    "tags": [
+        "shoes",
+        "male",
+        "man",
+        "female",
+        "woman"
+    ],
+    "category": "feet",
+    "main": [
+        {
+            "type": "urn:beland:off-chain:base-avatars:BaseFemale",
+            "model": "Feet_WhileSlothShoes.glb"
+        },
+        {
+            "type": "urn:beland:off-chain:base-avatars:BaseMale",
+            "model": "Feet_WhileSlothShoes.glb"
+        }
+    ]
+}

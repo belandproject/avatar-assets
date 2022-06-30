@@ -1,0 +1,25 @@
+{
+    "name": "CaroSlothShoes",
+    "i18n": {
+        "en": "Caro Sloth Shoes",
+        "es": "Caro Sloth Shoes"
+    },
+    "tags": [
+        "shoes",
+        "male",
+        "man",
+        "female",
+        "woman"
+    ],
+    "category": "feet",
+    "main": [
+        {
+            "type": "urn:beland:off-chain:base-avatars:BaseFemale",
+            "model": "Feet_CaroSlothShoes.glb"
+        },
+        {
+            "type": "urn:beland:off-chain:base-avatars:BaseMale",
+            "model": "Feet_CaroSlothShoes.glb"
+        }
+    ]
+}

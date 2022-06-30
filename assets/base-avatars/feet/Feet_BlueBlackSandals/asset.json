@@ -1,0 +1,25 @@
+{
+    "name": "BlueBlackSandals",
+    "i18n": {
+        "en": "Blue Black Sandals",
+        "es": "Blue Black Sandals"
+    },
+    "tags": [
+        "shoes",
+        "male",
+        "man",
+        "female",
+        "woman"
+    ],
+    "category": "feet",
+    "main": [
+        {
+            "type": "urn:beland:off-chain:base-avatars:BaseFemale",
+            "model": "Feet_BlueBlackSandals.glb"
+        },
+        {
+            "type": "urn:beland:off-chain:base-avatars:BaseMale",
+            "model": "Feet_BlueBlackSandals.glb"
+        }
+    ]
+}

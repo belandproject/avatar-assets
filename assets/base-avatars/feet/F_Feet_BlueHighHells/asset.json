@@ -1,0 +1,19 @@
+{
+    "name": "BlueHighHells",
+    "i18n": {
+        "en": "Blue High Hells",
+        "es": "Blue High Hells"
+    },
+    "tags": [
+        "shoes",
+        "woman",
+        "women"
+    ],
+    "category": "feet",
+    "main": [
+        {
+            "type": "urn:beland:off-chain:base-avatars:BaseFemale",
+            "model": "F_Feet_BlueHighHells.glb"
+        }
+    ]
+}

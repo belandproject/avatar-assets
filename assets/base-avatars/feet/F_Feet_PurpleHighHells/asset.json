@@ -1,0 +1,19 @@
+{
+    "name": "PurpleHighHells",
+    "i18n": {
+        "en": "Purple High Hells",
+        "es": "Purple High Hells"
+    },
+    "tags": [
+        "shoes",
+        "woman",
+        "women"
+    ],
+    "category": "feet",
+    "main": [
+        {
+            "type": "urn:beland:off-chain:base-avatars:BaseFemale",
+            "model": "F_Feet_PurpleHighHells.glb"
+        }
+    ]
+}
