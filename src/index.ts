@@ -55,11 +55,12 @@ export async function runMain() {
     let wearables: Wearable[] = []
     for (let assetFolder of assetFolders) {
       const contents = await uploadAsset(assetFolder)
+      console.log(assetFolder, contents)
       let wearable: any = {}
       const assetJSON = await readAssetJson(assetFolder)
       wearable.id = `urn:beland:off-chain:${collectioName}:${assetJSON.name}`
       wearable.name = assetJSON.name
-      wearable.image = contents.find((content) => content.path == 'thumbnail.png').hash
+      wearable.imageUrl = contents.find((content) => content.path == 'thumbnail.png').hash
       wearable.description = assetJSON.description || ''
       const imageName = `${assetJSON.name}.png`
       const nameBlacklist = ['asset.json', 'thumbnail.png', imageName]
@@ -142,7 +143,7 @@ function addFolderEntriesToArray(array: string[], rootFolder: string) {
 }
 
 async function login() {
-  identity = await createIdentity(300)
+  identity = await createIdentity(3000)
 }
 
 

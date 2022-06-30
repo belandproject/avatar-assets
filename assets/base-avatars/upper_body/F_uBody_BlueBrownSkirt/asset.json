@@ -9,6 +9,9 @@
         "female",
         "woman"
     ],
+    "hides": [
+        "lower_body"
+    ],
     "category": "upper_body",
     "main": [
         {

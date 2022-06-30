@@ -19,7 +19,7 @@ export type SourceJson = {
 
 export type Wearable = {
   id: WearableId
-  image: string | undefined
+  imageUrl: string | undefined
   description: string | undefined
   data: Data
 }
