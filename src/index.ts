@@ -54,15 +54,21 @@ export async function runMain() {
     console.log(`Found ${categoryFolders.length} categories with ${assetFolders.length} assets in total...`)
     let wearables: Wearable[] = []
     const isExists = {}
+    const assetJSONs = {}
+
     for (let assetFolder of assetFolders) {
-      const contents = await uploadAsset(assetFolder)
-      let wearable: any = {}
       const assetJSON = await readAssetJson(assetFolder)
+      assetJSONs[assetFolder] = assetJSON
       if (isExists[assetJSON.name]) {
         throw new Error(`[${assetFolder}] ${assetJSON.name} is exists`)
       }
-
       isExists[assetJSON.name] = true
+    }
+
+    for (let assetFolder of assetFolders) {
+      const contents = await uploadAsset(assetFolder)
+      let wearable: any = {}
+      const assetJSON = assetJSONs[assetFolder]
       wearable.id = `urn:beland:off-chain:${collectioName}:${assetJSON.name}`
       wearable.name = assetJSON.name
       wearable.imageUrl = contents.find((content) => content.path == 'thumbnail.png').hash
