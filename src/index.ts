@@ -22,7 +22,7 @@ const readDir = promisify(readdirOrig)
 const readFile = promisify(readFileOrig)
 const API = process.env.API || 'https://nft-api-test.beland.io/v1'
 const PRIVATE_KEY = process.env.PRIVATE_KEY
-var identity: AuthIdentity;
+var identity: AuthIdentity
 
 if (!module.parent) {
   runMain().catch((error) => console.log(error, error.stack))
@@ -53,11 +53,16 @@ export async function runMain() {
 
     console.log(`Found ${categoryFolders.length} categories with ${assetFolders.length} assets in total...`)
     let wearables: Wearable[] = []
+    const isExists = {}
     for (let assetFolder of assetFolders) {
       const contents = await uploadAsset(assetFolder)
-      console.log(assetFolder, contents)
       let wearable: any = {}
       const assetJSON = await readAssetJson(assetFolder)
+      if (isExists[assetJSON.name]) {
+        throw new Error(`[${assetFolder}] ${assetJSON.name} is exists`)
+      }
+
+      isExists[assetJSON.name] = true
       wearable.id = `urn:beland:off-chain:${collectioName}:${assetJSON.name}`
       wearable.name = assetJSON.name
       wearable.imageUrl = contents.find((content) => content.path == 'thumbnail.png').hash
@@ -130,7 +135,7 @@ async function uploadAsset(assetFolder) {
           .post(`${API}/upload`, form, {
             headers: {
               ...form.getHeaders(),
-              Authorization: 'Bearer ' + btoa(JSON.stringify(authLinks))
+              Authorization: 'Bearer ' + btoa(JSON.stringify(authLinks)),
             },
           })
           .then((res) => res.data[0])
@@ -146,13 +151,12 @@ async function login() {
   identity = await createIdentity(3000)
 }
 
-
 /**
  *
  * @params provider - any ethereum provider (e.g: window.ethereum)
  * @params expiration - ttl in seconds of the identity
  */
- export async function createIdentity(expiration: number): Promise<AuthIdentity> {
+export async function createIdentity(expiration: number): Promise<AuthIdentity> {
   const wallet = new Wallet(PRIVATE_KEY)
 
   const payload = {
@@ -161,12 +165,8 @@ async function login() {
     privateKey: PRIVATE_KEY,
   }
 
-  const identity = await Authenticator.initializeAuthChain(
-    wallet.address,
-    payload,
-    expiration,
-    (message) =>
-      wallet.signMessage(message)
+  const identity = await Authenticator.initializeAuthChain(wallet.address, payload, expiration, (message) =>
+    wallet.signMessage(message)
   )
 
   return identity
