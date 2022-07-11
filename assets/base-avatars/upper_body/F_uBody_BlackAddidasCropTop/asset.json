@@ -1,0 +1,19 @@
+{
+    "name": "black_addidas_cropTop",
+    "i18n": {
+        "en": "Black_Addidas_CropTop",
+        "es": "Black_Addidas_CropTop"
+    },
+    "tags": [
+        "top",
+        "female",
+        "woman"
+    ],
+    "category": "upper_body",
+    "main": [
+        {
+            "type": "urn:beland:off-chain:base-avatars:BaseFemale",
+            "model": "F_uBody_BlackAddidasCropTop.glb"
+        }
+    ]
+}

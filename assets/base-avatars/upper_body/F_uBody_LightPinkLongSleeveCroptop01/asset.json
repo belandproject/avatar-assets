@@ -1,0 +1,22 @@
+{
+    "name": "light_pink_long_sleeve_croptop_01",
+    "i18n": {
+        "en": "Light Pink Long Sleeve Croptop 01",
+        "es": "Light Pink Long Sleeve Croptop 01"
+    },
+    "tags": [
+        "top",
+        "female",
+        "woman"
+    ],
+    "category": "upper_body",
+    "hides": [
+        "lower_body"
+    ],
+    "main": [
+        {
+            "type": "urn:beland:off-chain:base-avatars:BaseFemale",
+            "model": "F_uBody_LightPinkLongSleeveCroptop01.glb"
+        }
+    ]
+}

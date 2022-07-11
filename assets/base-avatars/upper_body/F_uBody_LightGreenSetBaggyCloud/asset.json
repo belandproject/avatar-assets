@@ -1,0 +1,22 @@
+{
+    "name": "light_green_set_baggy_cloud",
+    "i18n": {
+        "en": "Light Green Set Baggy Cloud",
+        "es": "Light Green Set Baggy Cloud"
+    },
+    "tags": [
+        "top",
+        "female",
+        "woman"
+    ],
+    "hides": [
+        "lower_body"
+    ],
+    "category": "upper_body",
+    "main": [
+        {
+            "type": "urn:beland:off-chain:base-avatars:BaseFemale",
+            "model": "F_uBody_LightGreenSetBaggyCloud.glb"
+        }
+    ]
+}

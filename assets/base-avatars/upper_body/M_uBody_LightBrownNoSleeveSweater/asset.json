@@ -1,0 +1,19 @@
+{
+    "name": "light_brown_no_sleeve_wweater",
+    "i18n": {
+        "en": "Light Brown No Sleeve Sweater",
+        "es": "Light Brown No Sleeve Sweater"
+    },
+    "tags": [
+        "top",
+        "male",
+        "man"
+    ],
+    "category": "upper_body",
+    "main": [
+        {
+            "type": "urn:beland:off-chain:base-avatars:BaseMale",
+            "model": "M_uBody_LightBrownNoSleeveSweater.glb"
+        }
+    ]
+}

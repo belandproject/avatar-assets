@@ -1,0 +1,22 @@
+{
+    "name": "purple_skin_tight_dress",
+    "i18n": {
+        "en": "PurpleSkinTightDress",
+        "es": "PurpleSkinTightDress"
+    },
+    "tags": [
+        "top",
+        "female",
+        "woman"
+    ],
+    "category": "upper_body",
+    "hides": [
+        "lower_body"
+    ],
+    "main": [
+        {
+            "type": "urn:beland:off-chain:base-avatars:BaseFemale",
+            "model": "F_uBody_PurpleSkinTightDress.glb"
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "name": "light_green_set_jacket",
+    "i18n": {
+        "en": "Light Green Set Jacket",
+        "es": "Light Green Set Jacket"
+    },
+    "tags": [
+        "top",
+        "female",
+        "woman"
+    ],
+    "category": "upper_body",
+    "main": [
+        {
+            "type": "urn:beland:off-chain:base-avatars:BaseFemale",
+            "model": "F_uBody_LightGreenSetJacket.glb"
+        }
+    ]
+}

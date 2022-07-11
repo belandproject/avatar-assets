@@ -1,0 +1,20 @@
+{
+    "name": "orange_style_suit_pants",
+    "i18n": {
+        "en": "Orange Style Suit Pants",
+        "es": "Orange Style Suit Pants"
+    },
+    "tags": [
+        "bottom",
+        "male",
+        "man"
+    ],
+    "category": "lower_body",
+    "main": [
+        {
+            "type": "urn:beland:off-chain:base-avatars:BaseMale",
+            "model": "M_lBody_OrangeStyleSuitPants.glb"
+        }
+    ]
+}
+

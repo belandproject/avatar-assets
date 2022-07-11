@@ -1,0 +1,22 @@
+{
+    "name": "black_pink_overallset",
+    "i18n": {
+        "en": "BlackPinkOverallSet",
+        "es": "BlackPinkOverallSet"
+    },
+    "tags": [
+        "top",
+        "male",
+        "man"
+    ],
+    "category": "upper_body",
+    "hides": [
+        "lower_body"
+    ],
+    "main": [
+        {
+            "type": "urn:beland:off-chain:base-avatars:BaseMale",
+            "model": "M_uBody_BlackPinkOverallSet.glb"
+        }
+    ]
+}

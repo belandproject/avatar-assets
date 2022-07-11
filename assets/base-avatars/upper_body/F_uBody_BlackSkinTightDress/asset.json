@@ -1,0 +1,22 @@
+{
+    "name": "black_skin_tight_dress",
+    "i18n": {
+        "en": "Black Skin Tight Dress",
+        "es": "Black Skin Tight Dress"
+    },
+    "tags": [
+        "top",
+        "female",
+        "woman"
+    ],
+    "hides": [
+        "lower_body"
+    ],
+    "category": "upper_body",
+    "main": [
+        {
+            "type": "urn:beland:off-chain:base-avatars:BaseFemale",
+            "model": "F_uBody_BlackSkinTightDress.glb"
+        }
+    ]
+}

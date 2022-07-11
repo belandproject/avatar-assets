@@ -1,0 +1,22 @@
+{
+    "name": "light_pink_set_baggy_vest",
+    "i18n": {
+        "en": "Light Pink Set Baggy Vest",
+        "es": "Light Pink Set Baggy Vest"
+    },
+    "tags": [
+        "top",
+        "female",
+        "woman"
+    ],
+    "category": "upper_body",
+    "hides": [
+        "lower_body"
+    ],
+    "main": [
+        {
+            "type": "urn:beland:off-chain:base-avatars:BaseFemale",
+            "model": "F_uBody_LightPinkSetBaggyVest.glb"
+        }
+    ]
+}

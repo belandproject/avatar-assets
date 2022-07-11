@@ -1,0 +1,22 @@
+{
+    "name": "light_green_jennie_short_dress",
+    "i18n": {
+        "en": "Light Green Jennie Short Dress",
+        "es": "Light Green Jennie Short Dress"
+    },
+    "tags": [
+        "top",
+        "female",
+        "woman"
+    ],
+    "hides": [
+        "lower_body"
+    ],
+    "category": "upper_body",
+    "main": [
+        {
+            "type": "urn:beland:off-chain:base-avatars:BaseFemale",
+            "model": "F_uBody_LightGreenJennieShortDress.glb"
+        }
+    ]
+}

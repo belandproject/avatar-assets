@@ -1,0 +1,22 @@
+{
+    "name": "black_set_baggy_vest",
+    "i18n": {
+        "en": "Black Set Baggy Vest",
+        "es": "Black Set Baggy Vest"
+    },
+    "tags": [
+        "top",
+        "female",
+        "woman"
+    ],
+    "hides": [
+        "lower_body"
+    ],
+    "category": "upper_body",
+    "main": [
+        {
+            "type": "urn:beland:off-chain:base-avatars:BaseFemale",
+            "model": "F_uBody_BlackSetBaggyVest.glb"
+        }
+    ]
+}

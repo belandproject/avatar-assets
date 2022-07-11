@@ -1,0 +1,22 @@
+{
+    "name": "while_tshirt",
+    "i18n": {
+        "en": "WhileTshirt",
+        "es": "WhileTshirt"
+    },
+    "tags": [
+        "top",
+        "female",
+        "woman"
+    ],
+    "category": "upper_body",
+    "hides": [
+        "lower_body"
+    ],
+    "main": [
+        {
+            "type": "urn:beland:off-chain:base-avatars:BaseFemale",
+            "model": "F_uBody_WhileTshirt.glb"
+        }
+    ]
+}

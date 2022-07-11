@@ -1,0 +1,19 @@
+{
+    "name": "white_flower_cropTop",
+    "i18n": {
+        "en": "White Flower CropTop",
+        "es": "White Flower CropTop"
+    },
+    "tags": [
+        "top",
+        "female",
+        "woman"
+    ],
+    "category": "upper_body",
+    "main": [
+        {
+            "type": "urn:beland:off-chain:base-avatars:BaseFemale",
+            "model": "F_uBody_WhiteFlowerCropTop.glb"
+        }
+    ]
+}

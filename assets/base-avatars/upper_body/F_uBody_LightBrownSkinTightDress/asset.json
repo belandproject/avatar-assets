@@ -1,0 +1,22 @@
+{
+    "name": "light_brown_skin_tight_dress",
+    "i18n": {
+        "en": "Light Brown Skin Tight Dress",
+        "es": "Light Brown Skin Tight Dress"
+    },
+    "tags": [
+        "top",
+        "female",
+        "woman"
+    ],
+    "hides": [
+        "lower_body"
+    ],
+    "category": "upper_body",
+    "main": [
+        {
+            "type": "urn:beland:off-chain:base-avatars:BaseFemale",
+            "model": "F_uBody_LightBrownSkinTightDress.glb"
+        }
+    ]
+}

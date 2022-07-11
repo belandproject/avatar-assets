@@ -1,0 +1,22 @@
+{
+    "name": "black_chanel_overall",
+    "i18n": {
+        "en": "Black Chanel Overall",
+        "es": "Black Chanel Overall"
+    },
+    "tags": [
+        "top",
+        "female",
+        "woman"
+    ],
+    "hides": [
+        "lower_body"
+    ],
+    "category": "upper_body",
+    "main": [
+        {
+            "type": "urn:beland:off-chain:base-avatars:BaseFemale",
+            "model": "F_uBody_BlackChanelOverall.glb"
+        }
+    ]
+}
