@@ -71,6 +71,7 @@ export async function runMain() {
       const assetJSON = assetJSONs[assetFolder]
       wearable.id = `urn:beland:off-chain:${collectioName}:${assetJSON.name}`
       wearable.name = assetJSON.name
+      console.log(assetFolder, "/", contents)
       wearable.imageUrl = contents.find((content) => content.path == 'thumbnail.png').hash
       wearable.description = assetJSON.description || ''
       const imageName = `${assetJSON.name}.png`

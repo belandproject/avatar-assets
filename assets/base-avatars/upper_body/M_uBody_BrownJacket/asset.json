@@ -1,0 +1,19 @@
+{
+    "name": "brown_jacket",
+    "i18n": {
+        "en": "Brown Jacket",
+        "es": "Brown Jacket"
+    },
+    "tags": [
+        "top",
+        "male",
+        "man"
+    ],
+    "category": "upper_body",
+    "main": [
+        {
+            "type": "urn:beland:off-chain:base-avatars:BaseMale",
+            "model": "M_uBody_BrownJacket.glb"
+        }
+    ]
+}

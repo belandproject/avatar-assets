@@ -1,0 +1,19 @@
+{
+    "name": "brown_baggy_sweater",
+    "i18n": {
+        "en": "Brown Baggy Sweater",
+        "es": "Brown Baggy Sweater"
+    },
+    "tags": [
+        "top",
+        "male",
+        "man"
+    ],
+    "category": "upper_body",
+    "main": [
+        {
+            "type": "urn:beland:off-chain:base-avatars:BaseMale",
+            "model": "M_uBody_BrownBaggySweater.glb"
+        }
+    ]
+}

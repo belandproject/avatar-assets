@@ -1,0 +1,19 @@
+{
+    "name": "black_style_suit_pants",
+    "i18n": {
+        "en": "Black Style Suit Pants",
+        "es": "Black Style Suit Pants"
+    },
+    "tags": [
+        "bottom",
+        "male",
+        "man"
+    ],
+    "category": "lower_body",
+    "main": [
+        {
+            "type": "urn:beland:off-chain:base-avatars:BaseMale",
+            "model": "M_lBody_BlackStyleSuitPants.glb"
+        }
+    ]
+}

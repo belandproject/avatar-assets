@@ -1,0 +1,19 @@
+{
+    "name": "black_leather_jacket",
+    "i18n": {
+        "en": "Black Leather Jacket",
+        "es": "Black Leather Jacket"
+    },
+    "tags": [
+        "top",
+        "male",
+        "man"
+    ],
+    "category": "upper_body",
+    "main": [
+        {
+            "type": "urn:beland:off-chain:base-avatars:BaseMale",
+            "model": "M_uBody_BlackLeatherJacket.glb"
+        }
+    ]
+}
