@@ -1,0 +1,19 @@
+{
+    "name": "pink_style_suit_pants",
+    "i18n": {
+        "en": "Pink Style Suit Pants",
+        "es": "Pink Style Suit Pants"
+    },
+    "tags": [
+        "bottom",
+        "male",
+        "man"
+    ],
+    "category": "lower_body",
+    "main": [
+        {
+            "type": "urn:beland:off-chain:base-avatars:BaseMale",
+            "model": "M_lBody_PinkStyleSuitPants.glb"
+        }
+    ]
+}

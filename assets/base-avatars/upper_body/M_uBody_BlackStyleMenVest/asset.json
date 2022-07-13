@@ -1,0 +1,19 @@
+{
+    "name": "black_style_men_vest",
+    "i18n": {
+        "en": "Black Style Men Vest",
+        "es": "Black Style Men Vest"
+    },
+    "tags": [
+        "top",
+        "male",
+        "man"
+    ],
+    "category": "upper_body",
+    "main": [
+        {
+            "type": "urn:beland:off-chain:base-avatars:BaseMale",
+            "model": "M_uBody_BlackStyleMenVest.glb"
+        }
+    ]
+}

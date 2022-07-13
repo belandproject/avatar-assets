@@ -1,0 +1,19 @@
+{
+    "name": "pink_style_men_vest",
+    "i18n": {
+        "en": "Pink Style Men Vest",
+        "es": "Pink Style Men Vest"
+    },
+    "tags": [
+        "top",
+        "male",
+        "man"
+    ],
+    "category": "upper_body",
+    "main": [
+        {
+            "type": "urn:beland:off-chain:base-avatars:BaseMale",
+            "model": "M_uBody_PinkStyleMenVest.glb"
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "name": "green_short_sleeve_shirt",
+    "i18n": {
+        "en": "Green Short Sleeve Shirt",
+        "es": "Green Short Sleeve Shirt"
+    },
+    "tags": [
+        "top",
+        "male",
+        "man"
+    ],
+    "category": "upper_body",
+    "main": [
+        {
+            "type": "urn:beland:off-chain:base-avatars:BaseMale",
+            "model": "M_uBody_GreenShortSleeveShirt.glb"
+        }
+    ]
+}
