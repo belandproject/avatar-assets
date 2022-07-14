@@ -1,8 +1,8 @@
 {
-    "name": "pink_tshirt_05",
+    "name": "red_strapless_shirt",
     "i18n": {
-        "en": "Pink Tshirt 05",
-        "es": "Pink Tshirt 05"
+        "en": "Red Strapless Shirt",
+        "es": "Red Strapless Shirt"
     },
     "tags": [
         "top",
@@ -13,7 +13,7 @@
     "main": [
         {
             "type": "urn:beland:off-chain:base-avatars:BaseFemale",
-            "model": "F_uBody_PinkTshirt05.glb"
+            "model": "F_uBody_RedStraplessShirt.glb"
         }
     ]
 }

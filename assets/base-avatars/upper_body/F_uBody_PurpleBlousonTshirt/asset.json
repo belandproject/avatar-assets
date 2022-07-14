@@ -1,0 +1,19 @@
+{
+    "name": "purple_blouson_tshirt",
+    "i18n": {
+        "en": "Purple Blouson Tshirt",
+        "es": "Purple Blouson Tshirt"
+    },
+    "tags": [
+        "top",
+        "female",
+        "woman"
+    ],
+    "category": "upper_body",
+    "main": [
+        {
+            "type": "urn:beland:off-chain:base-avatars:BaseFemale",
+            "model": "F_uBody_PurpleBlousonTshirt.glb"
+        }
+    ]
+}

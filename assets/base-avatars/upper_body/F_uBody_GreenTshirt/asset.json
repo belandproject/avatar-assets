@@ -1,0 +1,19 @@
+{
+    "name": "f_green_tshirt",
+    "i18n": {
+        "en": "Green Tshirt",
+        "es": "Green Tshirt"
+    },
+    "tags": [
+        "top",
+        "female",
+        "woman"
+    ],
+    "category": "upper_body",
+    "main": [
+        {
+            "type": "urn:beland:off-chain:base-avatars:BaseFemale",
+            "model": "F_uBody_GreenTshirt.glb"
+        }
+    ]
+}
